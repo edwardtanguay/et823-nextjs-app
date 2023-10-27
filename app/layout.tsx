@@ -26,6 +26,9 @@ const links = [
 	},
 	{
 		href: '/employees', title: 'Employees'
+	},
+	{
+		href: '/events', title: 'Events'
 	}
 ]
 
