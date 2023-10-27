@@ -4,7 +4,7 @@ const NewTodoForm = ({}) => {
 		<>
 			<div>
 				<form>
-					<input type="text" />
+					<input type="text" className="border border-gray-600"/>
 				</form>
 		</div>
 
