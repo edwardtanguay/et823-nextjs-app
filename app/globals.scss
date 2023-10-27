@@ -18,4 +18,11 @@
 
 body {
 	color: rgb(var(--foreground-rgb));
+
+	.pageTodos {
+		.message {
+			background-color: brown;
+			color: yellow
+		}
+	}
 }
