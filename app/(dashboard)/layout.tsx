@@ -1,11 +1,33 @@
-const DashboardLayout = ({children}: {children: React.ReactNode}) => {
+"use client"
+import Link from "next/link";
+
+function DashboardLayout({ children }: { children: React.ReactNode }) {
+	const links = [
+		{
+			href: '/', title: 'Home'
+		},
+		{
+			href: '/todos', title: 'Todos'
+		},
+		{
+			href: '/docs', title: 'Docs'
+		},
+		{
+			href: '/products', title: 'Products'
+		}
+	]
 	return (
-		<>
-		<h1>HEADER</h1>
-		{children}
-		<h1>FOOTER</h1>
-		</>
-	)
+		<div className="bg-slate-500 h-screen">
+			<ul className="flex gap-3 bg-slate-700 text-gray-400 p-3">
+				{links.map((link, i) => (
+					<li key={i}><Link href={link.href}>{link.title} </Link></li>
+				))}
+			</ul>
+			<div>dashboard header</div>
+			{children}
+			<div>dashboard footer</div>
+		</div>
+	);
 }
 
-export default DashboardLayout
+export default DashboardLayout;
