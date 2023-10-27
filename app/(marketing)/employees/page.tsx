@@ -3,8 +3,10 @@ import axios from 'axios';
 
 const getEmployees = () => {
 	return new Promise<IEmployee[]>(async (resolve, reject) => {
-		const employees = (await axios.get('https://edwardtanguay.vercel.app/share/employees.json')).data
-		resolve(employees);
+		setTimeout(async () => {
+			const employees = (await axios.get('https://edwardtanguay.vercel.app/share/employees.json')).data
+			resolve(employees);
+		}, 1000)
 	})
 }
 
