@@ -14,6 +14,7 @@ const TodosPage = ({ params }: IProps) => {
 		<>
 			<div>This is the todos page with dashboard layout.</div>
 			<div>The URL segments are: <b>{urlSegments.map(m => m).join(', ')}</b></div>
+			<span>css test</span>
 		</>
 	)
 }

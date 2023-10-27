@@ -1,4 +1,3 @@
-import './marketing.css';
 
 function MarketingLayout({ children }: {children: React.ReactNode}) {
 	return (
