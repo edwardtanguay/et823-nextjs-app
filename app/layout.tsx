@@ -23,6 +23,9 @@ const links = [
 	},
 	{
 		href: '/products', title: 'Products'
+	},
+	{
+		href: '/employees', title: 'Employees'
 	}
 ]
 
@@ -34,7 +37,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className} suppressHydrationWarning={true}>
-				<ul className="flex gap-3 bg-slate-700 text-gray-400 p-3">
+				<ul className="flex gap-3 bg-slate-700 text-gray-400 p-4">
 					{links.map((link, i) => (
 						<li key={i}><Link href={link.href}>{link.title} </Link></li>
 					))}
