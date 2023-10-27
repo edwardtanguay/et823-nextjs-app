@@ -1,7 +1,7 @@
 const PageTodos = () => {
 	return ( 
 		<>
-		<h2>Todos</h2>	
+		<h2 className="text-2xl">Todos</h2>	
 		<p>testing</p>
 		</>
 	 );
