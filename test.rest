@@ -1,0 +1,13 @@
+@url = http://localhost:3000/api
+
+### GET TODO
+{{url}}/todo
+
+### POST TODO
+POST {{url}}/todo
+content-type: application/json
+
+{
+	"task": "Read French",
+	"completed": false
+}
